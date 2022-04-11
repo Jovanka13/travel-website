@@ -1,0 +1,395 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Charm', cursive;
+    font-family: 'Judson', serif;
+    font-family: 'Oleo Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playball', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+  
+body {
+    scroll-behavior: smooth;
+    background-color: rgb(236, 245, 241);
+}
+
+/* =========== Header Style ============ */
+
+header {
+    background-color: #fff;
+}
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+.navbar-brand {
+    color: rgb(44, 30, 236);
+    text-shadow: 0px -2px 0px rgb(16, 19, 235), 0px 2px 3px rgb(93, 103, 243);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #113488;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.navbar-nav li a:hover {
+    border-bottom: 3px solid rgb(12, 12, 223);
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgb(41, 9, 219);
+}
+
+/* =========== Banner Style ============ */
+
+#home .carousel-item {
+    height: 40rem;
+}
+
+#home .carousel-caption {
+    position: absolute;
+    bottom: 15rem;
+}
+
+#home .carousel-caption h5 {
+    text-transform: capitalize;
+    font-family: 'Charm', cursive;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+/* =========== About Style ============ */
+
+#about {
+	padding: 100px 0 0 0;
+}
+
+#about .title {
+    font-family: 'Playball', cursive;
+    color: rgb(34, 4, 104);
+    padding-bottom: 30px;
+}
+
+#about img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+#about img:hover {
+    transform: rotateY(180deg);
+}    
+
+#icons-about {
+    padding: 200px 0;
+}
+
+#icons-about .col-md .box {
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 2px rgb(167, 164, 164);
+    padding: 0.4em 0.7em;
+    display: inline-block;
+}
+
+#team {
+	padding: 100px 0;
+    background-image: url(img/landscape.jpg);
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#team .title-team {
+    font-family: 'Playball', cursive;
+    color: rgb(34, 4, 104);
+    padding-bottom: 50px;
+}
+
+.accordion-button {
+    color: rgb(11, 15, 224);
+    font-weight: 800;
+    background-color: transparent;
+}
+
+#travel {
+    padding: 100px 0;
+}
+
+#travel .travel-title {
+    font-family: 'Playball', cursive;
+    color: rgb(34, 4, 104);
+    padding-bottom: 30px;
+}
+
+/* =========== Destinations Style ============ */
+
+#destinations {
+    padding: 100px 0 200px 0;
+}
+
+#destinations h2 {
+    font-family: 'Playball', cursive;
+    color: rgb(34, 4, 104);
+    padding-bottom: 30px;
+    line-height: 1.7;
+}
+
+#destinations p {
+    padding-bottom: 30px;
+}
+
+#destinations .destinations-image {
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#offers-destinations {
+    padding: 200px 0;
+}
+
+#offers-destinations .main-title {
+    font-family: 'Playball', cursive;
+    color: rgb(34, 4, 104);
+    padding-bottom: 30px;
+}
+
+.card-subtitle .bi {
+    color: rgb(0, 195, 255);
+}
+
+.card-text .btn {
+    display: inline-block;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+#places {
+    height: 100%;
+    margin: 0;
+    padding: 100px 0;
+  }
+ 
+#places .nav-link {
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+#places .nav-link a {
+    color: #2fd2d8;
+}    
+
+#places .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #2c81d6;
+    background-color: rgba(32, 218, 218, 0.973);
+}
+
+#places .tab-content h3 {
+    padding-bottom: 10px;
+}
+
+#testimonials {
+    padding: 100px 0;
+    margin: 100px 0; 
+    background-image: url(img/reviews.jpg);
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 16%, 100% 100%, 0 88%);
+}   
+
+#testimonials::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.336);
+}   
+
+
+#testimonials .carousel-item h5 {
+    color: #fff;
+    padding-bottom: 30px;
+    line-height: 1.7;
+    font-family: 'Charm', cursive;
+    font-size: 30px;
+}
+
+.blockquote p {
+    color: #fff;
+}
+
+#testimonials .blockquote-footer {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 10px;
+}    
+
+/* =========== Booking Style ============ */
+
+#booking {
+    background-image: url(img/resort.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    margin-bottom: 100px;
+}
+
+#booking h1 {
+    font-family: 'Playball', cursive;
+    color: rgb(34, 4, 104);
+    padding-bottom: 30px;
+}
+
+/* =========== Footer ============ */
+
+footer {
+    background-image: linear-gradient(to right, rgb(107, 243, 243), rgb(108, 224, 199));
+    color: #fff;
+}
+
+footer .main-title {
+    padding-bottom: 30px;
+}
+
+.footer-img {
+    width: 100%;
+}
+
+.follow-icons .bi {
+    padding: 10px 13px;
+    font-size: 20px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+.follow-icons .bi:hover {
+    opacity: 0.7;
+}
+  
+.follow-icons .bi-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.follow-icons .bi-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.follow-icons .bi-instagram {
+    background: #078021;
+    color: white;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+/* =========== Media Queries ============ */
+
+@media only screen and (max-width: 1200px) {
+	
+    #destinations h2 {
+        padding-bottom: 0;
+    }
+    
+    #destinations p {
+        padding-bottom: 0;
+    }
+
+    #home .carousel-indicators {
+        position: absolute;
+        bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 1035px) {
+	
+    #home .carousel-indicators {
+        position: absolute;
+        bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+	
+    .about-text {
+		padding-top: 50px;
+	}
+    #home .carousel-caption {
+        position: absolute;
+        bottom: 17rem;
+    }
+
+    #home .carousel-indicators {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+	#home .carousel-item {
+        height: 30rem;
+    }
+
+    #home .carousel-caption h5 {
+        font-size: 1rem;
+        font-weight: 800;
+    }    
+
+    #about {
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+
+	#home .carousel-caption {
+        padding-bottom: 40px;
+    } 
+
+    #home .carousel-indicators {
+        display: none;
+    }
+
+    #home .carousel-control-next-icon, .carousel-control-prev-icon {
+        display: none;
+    }    
+}
+
+/* =========== Preloader ============ */
+
+.loader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    background-color: #fff;
+  }
+  
+  .loader img {
+    width: 20rem;
+    height: 20rem;
+}

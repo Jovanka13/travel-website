@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Travel Agency</title>
+    <link rel="icon" href="img/fav.png" sizes="16x16 32x32" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm&family=Judson:ital@0;1&family=Oleo+Script&family=Open+Sans:ital,wght@0,400;0,500;1,300;1,500&family=Playball&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+    <!-----------------------Preloader------------------------->
+    <div class="loader">
+        <img src="img/preloader.gif" alt="loader"/>
+    </div>
+    <!-------------------------Header--------------------------->
+    <header>
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand px-2" href="#"><img src="img/logo.gif" alt="" width="60" height="60" class="d-inline-block">World Travel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href="#home"><i class="bi bi-house-fill"></i> Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#about"><i class="bi bi-people-fill"></i> About</a>
+              </li>
+              <li class="nav-item px-2 dropdown">
+                <a class="nav-link dropdown-toggle" href="#destinations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-geo-alt-fill"></i> Destinations
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Macedonia</a></li>
+                  <li><a class="dropdown-item" href="#">Mexico</a></li>
+                  <li><a class="dropdown-item" href="#">Brazil</a></li>
+                  <li><a class="dropdown-item" href="#">Spain</a></li>
+                  <li><a class="dropdown-item" href="#">Turkey</a></li>
+                  <li><a class="dropdown-item" href="#">Greece</a></li>
+                  <li><a class="dropdown-item" href="#">Egypt</a></li>
+                  <li><a class="dropdown-item" href="#">Thailand</a></li>
+                </ul>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#booking"><i class="bi bi-calendar3"></i> Booking</a>
+              </li>
+            </ul>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary m-lg-1"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+      </nav> 
+    </header>  
+    <!-------------------------Modal--------------------------->  
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="container-fluid">
+                        <div class="row gy-4">
+                            <div class="col-lg-4 col-sm-12 bg-cover"
+                                style="background-image: url(img/travel.jpg); min-height: 300px;">
+                            </div>
+                            <div class="col-lg-8">
+                                <form class="p-lg-5 col-12 row g-3">
+                                    <div>
+                                        <h1>Get in touch</h1>
+                                    <p>Fell free to contact us and we will get back to you as soon as possible</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="userName" class="form-label">First name</label>
+                                        <input type="text" class="form-control" placeholder="Insert your name" id="userName"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="userName" class="form-label">Last name</label>
+                                        <input type="text" class="form-control" placeholder="Insert your last name" id="userName"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="userName" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" placeholder="johndoe@example.com" id="userName"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="exampleInputEmail1" class="form-label">Enter Message</label>
+                                        <textarea name="" placeholder="Enter your message" class="form-control" id=""  rows="4"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn btn-primary btn-rounded">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-------------------------Banner--------------------------->
+<section id="home">
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div> 
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <video class="img-fluid" autoplay loop muted>
+          <source src="img/video1.mp4" type="video/mp4"/>
+        </video>
+        <div class="carousel-caption">
+          <h5>“A journey of a thousand miles begins with a single step”</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <video class="img-fluid" autoplay loop muted>
+          <source src="img/video2.mp4" type="video/mp4"/>
+        </video>
+        <div class="carousel-caption">
+          <h5>“A journey of a thousand miles begins with a single step”</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <video class="img-fluid" autoplay loop muted>
+          <source src="img/video3.mp4" type="video/mp4"/>
+        </video>
+        <div class="carousel-caption">
+          <h5>“A journey of a thousand miles begins with a single step”</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <video class="img-fluid" autoplay loop muted>
+          <source src="img/video4.mp4" type="video/mp4"/>
+        </video>
+        <div class="carousel-caption">
+          <h5>“A journey of a thousand miles begins with a single step”</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <video class="img-fluid" autoplay loop muted>
+          <source src="img/video5.mp4" type="video/mp4"/>
+        </video>
+        <div class="carousel-caption">
+          <h5>“A journey of a thousand miles begins with a single step”</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <video class="img-fluid" autoplay loop muted>
+          <source src="img/video6.mp4" type="video/mp4"/>
+        </video>
+        <div class="carousel-caption">
+          <h5>“A journey of a thousand miles begins with a single step”</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> 
+</section>  
+  <!-------------------------About---------------------------> 
+  <section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-12 col-12" data-aos="fade-right">
+					<img src="img/about.jpg" alt="landscape" class="img-fluid mx-auto d-block">
+        </div> 
+				<div class="col-lg-7 col-md-12 col-12 ps-lg-5">
+					<div class="about-text" data-aos="fade-left">
+						<h1 class="title">Our Story</h1>
+						<p>We design once-in-a-lifetime journeys for individuals who appreciate luxury in all its forms. Whether you are looking for meaningful time with your loved ones or the chance to reconnect with yourself, returning to the wild or meeting fascinating people with different stories to tell, we design journeys for those who wish to rediscover, reconnect and take part in something bigger. Above all, we take you on journeys that get you under the skin of the place you are visiting, and that connect you with local people, cultures and customs.<br>
+            We understand your travel needs. Our experienced and knowledgeable team is committed to providing you with excellent customer service and saving you time and money. World Travel has been providing the best travel services in Switzerland since year 2000. Located in Bern we are a leading travel agency in Switzerland with over 12 years of dedicated service and a team of trained professionals. We love our profession and love it when we can provide our customers with their dream tours.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+  </section> 
+    <!-----------------Features-------------->
+    <div class="container text-center" id="icons-about" data-aos="fade-down">
+      <div class="row g-4">
+        <div class="col-md">
+          <div class="box">
+          <img src="img/checklist.gif" alt="" width="200px" height="200px">
+          <h6>MISSION STATEMENT</h6>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="box">
+          <img src="img/padlock.gif" alt="" width="200px" height="200px">
+          <h6>KEY MESSAGE</h6>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="box">
+          <img src="img/user.gif" alt="" width="200px" height="200px">
+          <h6>TEAM</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------Team-------------------->
+<section id="team">
+<div class="container text-center">
+  <h1 class="title-team">The people who are there for you</h1> 
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Team Members 1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/person1.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">John Joe</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">COMPANY FOUNDER, CEO</h6>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted"><a href="#" class="card-link"><i class="bi bi-envelope"></i> johnjoe@worldtravel.com</a></small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/person2.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Sara Marshal</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">ADMINISTRATION</h6>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted"><a href="#" class="card-link"><i class="bi bi-envelope"></i> saramarshal@worldtravel.com</a></small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/person3.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Ariana Fox</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">ACCOUNTING</h6>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted"><a href="#" class="card-link"><i class="bi bi-envelope"></i> arianafox@worldtravel.com</a></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Team Members 2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/person4.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Manuela Lopez</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">SALES & MARKETING MANAGER</h6>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted"><a href="#" class="card-link"><i class="bi bi-envelope"></i> manuelalopez@worldtravel.com</a></small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/person5.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Mario Peters</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">CORPORATE CARE</h6>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted"><a href="#" class="card-link"><i class="bi bi-envelope"></i> mariopeters@worldtravel.com</a></small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/person6.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Paola Grazini</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">GROUP COORDINATOR</h6>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted"><a href="#" class="card-link"><i class="bi bi-envelope"></i> paolagrazini@worldtravel.com</a></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section> 
+<section id="travel">
+  <h1 class="travel-title text-center">Why travel with World Travel Agency?</h1>
+<div class="container" data-aos="fade-up">  
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+  <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+      <div class="card-header py-3 text-white bg-primary border-primary">
+        <h4 class="my-0 fw-normal"><i class="bi bi-scissors"></i></h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">100% Tailor made</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Your entire holiday is designed around your requirements.</li>
+          <li>Explore your interests at your own speed.</li>
+          <li>Select your preferred style of accommodation.</li>
+          <li>Create the perfect trip with the help of our specialists.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+      <div class="card-header py-3 text-white bg-primary border-primary">
+        <h4 class="my-0 fw-normal"><i class="bi bi-journals"></i></h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">Expert knowledge</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>All our specialists have travelled extensively or lived in their specialist regions.</li>
+          <li>The same specialist will handle your trip from start to finish.</li>
+          <li>Make the most of your time and budget.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+      <div class="card-header py-3 text-white bg-primary border-primary">
+        <h4 class="my-0 fw-normal"><i class="bi bi-file-earmark-person"></i></h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">The best guides.</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Make the difference between a good trip and an outstanding one.</li>
+          <li>Hand picked by us or our local partners as the best available.</li>
+          <li>Offering more than just dates and names, they strive to offer real insight into their country.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!----------------------Destinations----------------------->
+<section id="destinations">
+<div class="container">
+  <div class="row featurette">
+    <div class="col-md-6" data-aos="fade-right">
+      <h2 class="featurette-heading">Enjoy the breathtaking beauty<span class="text-muted"><br>Get Ready</span></h2>
+      <p class="lead">Adventure awaits. Whether you are dreaming of white powder ski hills, warm sandy beaches, or cobblestone streets and luxury shopping, we will take you there.</p>
+      <a class="btn btn-primary" href="destinations.html" target="_blank" role="button">Read More</a>
+    </div>
+    <div class="col-md-6" data-aos="fade-left">
+      <div class="row">
+        <div class="col-md-6 p-3">
+          <img src="img/img1.jpg" alt="" class="img-fluid destinations-image">
+        </div>  
+        <div class="col-md-6 p-3"> 
+          <img src="img/img2.jpg" alt="" class="img-fluid destinations-image">
+        </div>  
+      </div>
+      <div class="row">
+        <div class="col-md-6 p-3">
+          <img src="img/img3.jpg" alt="" class="img-fluid destinations-image">
+        </div>  
+        <div class="col-md-6 p-3">  
+          <img src="img/img4.jpg" alt="" class="img-fluid destinations-image"> 
+        </div>         
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+<div id="offers-destinations">
+<h1 class="main-title text-center">Top offers</h1>
+<div class="container" id="offers">
+<div class="row">
+  <div class="owl-carousel owl-theme">
+  <div class="card text-white shadow">
+    <img src="img/antalya.jpg" class="card-img" alt="Antalya">
+    <div class="card-img-overlay">
+      <h5 class="card-title">Antalya <span class="badge bg-danger">-39%</span></h5>
+      <h6 class="card-subtitle mb-2 text-muted">
+        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+      </h6>
+      <p class="card-text"><a href="#" class="btn btn-primary">$399</a></p>
+    </div>
+  </div>
+    <div class="card text-white shadow">
+      <img src="img/bali.jpg" class="card-img" alt="Bali">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Bali <span class="badge bg-danger">-39%</span></h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </h6>
+        <p class="card-text"><a href="#" class="btn btn-primary">$399</a></p>
+      </div>
+    </div>
+    <div class="card text-white shadow">
+        <img src="img/hawaii.jpg" class="card-img" alt="Hawaii">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Hawaii <span class="badge bg-danger">-39%</span></h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </h6>
+          <p class="card-text"><a href="#" class="btn btn-primary">$399</a></p>
+        </div>
+    </div>
+    <div class="card text-white shadow">
+        <img src="img/lucern.jpg" class="card-img" alt="Lucern">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Lucern <span class="badge bg-danger">-39%</span></h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </h6>
+          <p class="card-text"><a href="#" class="btn btn-primary">$399</a></p>
+        </div>
+    </div>
+      <div class="card text-white shadow">
+          <img src="img/machu picchu.jpg" class="card-img" alt="Machu Picchu">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Machu Picchu <span class="badge bg-danger">-39%</span></h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </h6>
+            <p class="card-text"><a href="#" class="btn btn-primary">$399</a></p>
+          </div>
+      </div>
+        <div class="card text-white shadow">
+            <img src="img/maldive.jpg" class="card-img" alt="Maldive">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Maldive <span class="badge bg-danger">-39%</span></h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </h6>
+              <p class="card-text"><a href="#" class="btn btn-primary">$399</a></p>
+            </div>
+        </div>
+  </div>
+</div>  
+</div>
+
+<div id="places">
+  <div class="container mt-3">
+    <h2 class="text-center p-3">Destinations</h2>
+    <ul class="nav nav-tabs nav-justified" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#macedonia">Macedonia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#mexico">Mexico</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#brazil">Brazil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#spain">Spain</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#turkey">Turkey</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#greece">Greece</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#egypt">Egypt</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#thailand">Thailand</a>
+      </li>
+    </ul>
+  
+    <div class="tab-content">
+      <div id="macedonia" class="container tab-pane active"><br>
+        <h3>Why you should visit Macedonia?</h3>
+        <p>Macedonia is a landlocked country located in Southeast Europe, in the heart of the Balkan Peninsula. It constitutes a half of the larger geographical region of Macedonia, known by the Alexander the Great. Macedonia has  just over two million inhabitants, the majority population is ethnic Macedonian and Orthodox but there is also a significant Albanian Muslim minority followed by Turks, Serbs and some other nationalities. Climate is transitional from Mediterranean to continental. It is a great place where you can relive the spirit of the people through their hospitality, but also to enjoy in some of the tourist centers.<br>
+        The country's abundance of natural and cultural attractions make it an attractive destination of visitors. It is an excellent starting point for tours through several countries around like Greece to the south, Albania to the west, Bulgaria to the east, Serbia and Kosovo to the north and readily available are the countries on the Adriatic Sea, Montenegro and Croatia, including Bosnia and Herzegovina in some of the round trips. The main characteristics of the Macedonian tourist area are: transit tourism, convenient mountain conditions for winter sports, thermal mineral springs and also our beautiful lakes which provide excellent conditions for summer stationary tourism.<br>
+        Macedonian traditional cuisine includes many dishes that vary from region to region. Typical Macedonian food resembles the food of the southern Balkans, meaning loads of grilled meat (known as skara). What is typical and characteristic of the Macedonian cuisine is the widely famous ajvar, pindzur, shopska salata (a mixed salad) beans, musaka, cabbage rolls, homemade pie, vegetable casserole… Rakija is a strong grape brandy that has the best claim to be Republic's national beverage. There are also many breweries which brew good-tasting beer. The wine is one of the symbols of the Macedonian land, therefore Macedonians boast the largest winery in the Balkan area.<br>
+        Rare natural beauties, preserved old architecture but and modern urban cities also, traditional delicious food and specially selected wines, fresh fruits and vegetables, many festivals and events during the whole year and the hospitality of the people as well are sufficient reason for Macedonia to be your next destination. WELCOME!</p>
+
+        <div class="container" data-aos="zoom-in">
+          <div class="d-flex flex-row">
+             <div class="d-flex flex-column">
+                <img src="img/mac1.jpg" class="img-fluid">
+                <img src="img/mac2.jpg" class="img-fluid">
+                <img src="img/mac3.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/mac4.jpg" class="img-fluid">
+                <img src="img/mac5.jpg" class="img-fluid">
+                <img src="img/mac6.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/mac7.jpg" class="img-fluid">
+                <img src="img/mac8.jpg" class="img-fluid">
+                <img src="img/mac9.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/mac10.jpg" class="img-fluid">
+                <img src="img/mac11.jpg" class="img-fluid">
+                <img src="img/mac12.jpg" class="img-fluid">
+             </div>
+          </div>
+       </div>
+      </div>
+    
+      <div id="mexico" class="container tab-pane fade"><br>
+        <h3>DISCOVER MEXICO IN A UNIQUE WAY</h3>
+        <p>With 30 centuries of history, over 6,000 miles of coastline, 35 UNESCO World Heritage Sites, a dazzling assortment of resorts, vibrant indigenous culture and and much more, Mexico continues to provide international visitors with several attractions to see and do during their vacation. Mexico is unparalleled in diversity, hospitality and the quality of its visitor experience. Mexico has a wide variety of tourism products including sun and beach, romance, adventure, nature, wellness, LGBT, cruises, culture, events, luxury, sustainability and gastronomy. Mexico is a one-of-a-kind place with hundreds of destinations to explore, and it’s vibrant, multi-faceted experiences keep visitors coming back time and again.</p>
+
+        <div class="container">
+          <div class="d-flex flex-row">
+             <div class="d-flex flex-column">
+                <img src="img/mex1.jpg" class="img-fluid">
+                <img src="img/mex2.jpg" class="img-fluid">
+                <img src="img/mex3.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/mex4.jpg" class="img-fluid">
+                <img src="img/mex5.jpg" class="img-fluid">
+                <img src="img/mex6.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/mex7.jpg" class="img-fluid">
+                <img src="img/mex8.jpg" class="img-fluid">
+                <img src="img/mex9.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/mex10.jpg" class="img-fluid">
+                <img src="img/mex11.jpg" class="img-fluid">
+                <img src="img/mex12.jpg" class="img-fluid">
+             </div>
+          </div>
+       </div>
+      </div>
+
+      <div id="brazil" class="container tab-pane fade"><br>
+        <h3>A COUNTRY FULL OF SUPERLATIVES</h3>
+        <p>Very few tourist destinations can offer as many options as Brazil. Natural beauty, large popular festivities and countless protected environmental reserves are attractions that truly call the attention of foreign tourists when it comes time to choose a destination for their vacation. The weather needs to be taken into consideration when planning a trip to Brazil, as it can have a significant bearing on how you enjoy certain regions of the country. For example, the Amazon region is one of the world's rainiest places, making travel exceedingly difficult between January and May.<br>
+        From the rainforests in the north to the central marshlands and savanna and the major metropolitan areas of the south, Brazil offers great diversity. Want to try your hand at nearly every kind of sport imaginable? They've got it, golf, diving, rafting, free flight, hiking and even beach volleyball and bird watching. Love the arts, history, culture and nightlife of the city? Look no further than São Paulo, the largest city in the southern hemisphere, where the cuisine is varied and sophisticated, theatre is eclectic, soccer is the favored sport, dancing is almost a must and music is king.<br>
+        If you have the chance to come to Brazil for Carnaval, of course, Rio de Janeiro is the place to be. Carnaval, taking place during the week prior to Ash Wednesday is the ultimate way to experience Rio, a giant party lasting many days with parades in nearly every corner of the city.</p>
+
+        <div class="container">
+          <div class="d-flex flex-row">
+             <div class="d-flex flex-column">
+                <img src="img/bra1.jpg" class="img-fluid">
+                <img src="img/bra2.jpg" class="img-fluid">
+                <img src="img/bra3.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/bra4.jpg" class="img-fluid">
+                <img src="img/bra5.jpg" class="img-fluid">
+                <img src="img/bra6.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/bra7.jpg" class="img-fluid">
+                <img src="img/bra8.jpg" class="img-fluid">
+                <img src="img/bra9.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/bra10.jpg" class="img-fluid">
+                <img src="img/bra11.jpg" class="img-fluid">
+                <img src="img/bra12.jpg" class="img-fluid">
+             </div>
+          </div>
+       </div>
+      </div>
+
+      <div id="spain" class="container tab-pane fade"><br>
+        <h3>Experience Authentic Spain</h3>
+        <p>Spain’s diverse landscapes stir the soul. The Pyrenees and the Picos de Europa are as beautiful as any mountain range on the continent, while the snowcapped Sierra Nevada rises up improbably from the sun-baked plains of Andalucía; these are hiking destinations of the highest order. The wildly beautiful cliffs of Spain’s Atlantic northwest are offset by the charming coves of the Mediterranean. And everywhere you go, villages of timeless beauty perch on hilltops, huddle in valleys and cling to coastal outcrops as tiny but resilient outposts of Old Spain. That's where the country's charms are most likely to take hold.<br>
+        Food and wine are national obsessions in Spain, and with good reason. The touchstones of Spanish cooking are deceptively simple: incalculable variety, traditional recipes handed down through the generations, and an innate willingness to experiment and see what comes out of the kitchen laboratory. You may experience the best meal ever via tapas in an earthy bar where everyone's shouting, or via a meal prepared by a celebrity chef in the refined surrounds of a Michelin-starred restaurant. Either way, the breadth of gastronomic experience that awaits you is breathtaking and sure to be a highlight of your trip.<br>
+        Windswept Roman ruins, cathedrals of rare power and incomparable jewels of Islamic architecture speak of a country where the great civilisations of history have risen, fallen and left behind their indelible mark. More recently, what other country could produce such rebellious and relentlessly creative spirits as Salvador Dalí, Pablo Picasso and Antoni Gaudí and place them front and centre in public life? And here, grand monuments of history coexist alongside architectural creations of such daring that it becomes clear Spain's future will be every bit as original as its past.<br>
+        For all the talk of Spain's history, this is a country that lives very much in the present and there's a reason 'fiesta' is one of the best-known words in the Spanish language – life itself is a fiesta here and everyone seems to be invited. Perhaps you'll sense it along a crowded, post-midnight street when all the world has come out to play. Or maybe that moment will come when a flamenco performer touches something deep in your soul. Whenever it happens, you'll find yourself nodding in recognition: this is Spain</p>
+
+        <div class="container">
+          <div class="d-flex flex-row">
+             <div class="d-flex flex-column">
+                <img src="img/spa1.jpg" class="img-fluid">
+                <img src="img/spa2.jpg" class="img-fluid">
+                <img src="img/spa3.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/spa4.jpg" class="img-fluid">
+                <img src="img/spa5.jpg" class="img-fluid">
+                <img src="img/spa6.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/spa7.jpg" class="img-fluid">
+                <img src="img/spa8.jpg" class="img-fluid">
+                <img src="img/spa9.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/spa10.jpg" class="img-fluid">
+                <img src="img/spa11.jpg" class="img-fluid">
+                <img src="img/spa12.jpg" class="img-fluid">
+             </div>
+          </div>
+       </div>
+      </div>
+
+      <div id="turkey" class="container tab-pane fade"><br>
+        <h3>Tourism in Turkey</h3>
+        <p>Turkey, officially the Republic of Turkey, is a historic country of the world. It resides on the Anatolian peninsula in Western Asia and Balkan peninsula in Southeastern Europe. The Turkey Country is enveloped by sea on three sides – the Aegean Sea to the west, the Black Sea to the north, and the Mediterranean Sea to the south. The beauty of Turkey is lined up with warm colours, sun-kissed beaches, pine-covered forests, and historic Roman wonders. These exquisite exceptions played a big role in bagging the country 16 UNESCO World Heritage sites. From the largest remnants of the Roman Empire to exotic white travertine terraces of Pamukkale, Turkey has it all.<br> 
+        Turkey Tourism flaunts a flurry of tourist attractions. Head to the iconic Blue Mosque in Istanbul, Turkey for a spiritual experience. Or, visit Pergamon and the Temple of Artemis to explore the remnants of ancient time. If you’re a history enthusiast, head to Hagia Sophia museum for understanding the blend of different religions at one place. When it comes to trying different activities, Turkey has a plethora of options. Gift your adventurous soul an exotic hiking trip to the Valley of Love. Or, explore the pristine Mediterranean Sea at the many beautiful beaches of Turkey. Here, you can participate in kayaking, snorkelling, canoeing, etc. Or, if you wish to explore the Turkish tradition then head to an interactive show and participate in the traditional Turkish dance.<br>
+        Turkey with all its beauty, attractions, and activities, also has pleasant weather. The coastal areas of Turkey have a temperate Mediterranean climate, consisting of  warm, wet summers, heavy downpour in rainy seasons, and cool, wet winters. While the area away from the Mediterranean Sea has a temperate oceanic climate. In the eastern portion of Turkey, winters witness -30 degrees Celsius while summers witness 30 degrees Celsius.</p>
+
+        <div class="container">
+          <div class="d-flex flex-row">
+             <div class="d-flex flex-column">
+                <img src="img/tur1.jpg" class="img-fluid">
+                <img src="img/tur2.jpg" class="img-fluid">
+                <img src="img/tur3.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/tur4.jpg" class="img-fluid">
+                <img src="img/tur5.jpg" class="img-fluid">
+                <img src="img/tur6.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/tur7.jpg" class="img-fluid">
+                <img src="img/tur8.jpg" class="img-fluid">
+                <img src="img/tur9.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/tur10.jpg" class="img-fluid">
+                <img src="img/tur11.jpg" class="img-fluid">
+                <img src="img/tur12.jpg" class="img-fluid">
+             </div>
+          </div>
+       </div>
+      </div>
+
+      <div id="greece" class="container tab-pane fade"><br>
+        <h3>Greece - Experiential journeys will make you a storyteller</h3>
+        <p>Encircled by azure blue waters, Greece is home to 2,000 islands, out of which 160 are known to be inhabited. Popular all over the world as the magnificent land of Aristotle, Plato, and Socrates, this iconic country is famous for its rich cultural heritage, colourful festivals, and glorious history. The ever-charming beauty of Greece is credited to its pristine beaches, picturesque islands, spectacular mountains, intriguing ancient ruins, and magnificent monuments.<br>
+        Greece is home to a plethora of interesting places to visit that have always formed the prime attractions of the tourism here. From the architectural brilliance of Santorini and the spectacular beaches of Mykonos to the archaeological sites of Athens and the breathtaking gorges of Crete, this peninsular country has got every exciting sightseeing destination you will want to treat your eyes with on your Greece tour.<br>
+        No matter if you want a laid-back holiday or an action-packed thrilling vacation in Greece, the country can offer you exactly the kind of tour you want. While the super luxury hotels here and the soothing white sand beaches can offer you a relaxed vacation with your loved ones, the adventure seekers can go indulge in a plethora of exhilarating activities, such as watersports, caving, hiking, cable riding, and food touring.<br>
+        Not to forget, packed with open street markets and hosting popular local and international brands, Greece also offers the tourists an excellent scope to enjoy shopping like never before. Furthermore, the elegant and swanky clubs and restaurants add to the flamboyant nightlife culture of the country, letting you enjoy evening activities like partying, boozing, fine dining, and pub crawling.<br>
+        Greece experiences a Mediterranean climate with mild temperatures and usually dry summers and wet winters. While winters are sometimes marked by snowfall, the country remains mostly sunny all year round, favoring tourist activities.</p>
+
+        <div class="container">
+          <div class="d-flex flex-row">
+             <div class="d-flex flex-column">
+                <img src="img/gre1.jpg" class="img-fluid">
+                <img src="img/gre2.jpg" class="img-fluid">
+                <img src="img/gre3.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/gre4.jpg" class="img-fluid">
+                <img src="img/gre5.jpg" class="img-fluid">
+                <img src="img/gre6.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/gre7.jpg" class="img-fluid">
+                <img src="img/gre8.jpg" class="img-fluid">
+                <img src="img/gre9.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/gre10.jpg" class="img-fluid">
+                <img src="img/gre11.jpg" class="img-fluid">
+                <img src="img/gre12.jpg" class="img-fluid">
+             </div>
+          </div>
+       </div>
+      </div>
+
+      <div id="egypt" class="container tab-pane fade"><br>
+        <h3>Explore Egypt</h3>
+        <p>Egypt, officially known as the Arab Republic of Egypt, is one of the oldest countries in the world. Once considered the “Cradle of Civilisation” for its advanced society built along the banks of the fertile Nile River, the country has today evolved into a tourism hotspot, boasting two giant coastlines and the iconic pyramids. Egyptian civilisation traces its history back to almost 8000 BC, making it a must-see destination for historians and interested travellers alike. The country’s long and rich cultural tradition has kept up with years of modernisation and foreign influence, ensuring it remains one of the most diverse destinations for serious vacationers. It’s for these reasons that Egypt tourism has been on the rise over the last few years. There’s a lot to offer. You could enjoy a day at the beach, time-travel with the ancient monuments, or enjoy the raging nightlife in a number of cities. But be assured of one thing, you’ll never be bored.</p>
+
+        <div class="container">
+          <div class="d-flex flex-row">
+             <div class="d-flex flex-column">
+                <img src="img/eg1.jpg" class="img-fluid">
+                <img src="img/eg2.jpg" class="img-fluid">
+                <img src="img/eg3.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/eg4.jpg" class="img-fluid">
+                <img src="img/eg5.jpg" class="img-fluid">
+                <img src="img/eg6.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/eg7.jpg" class="img-fluid">
+                <img src="img/eg8.jpg" class="img-fluid">
+                <img src="img/eg9.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/eg10.jpg" class="img-fluid">
+                <img src="img/eg11.jpg" class="img-fluid">
+                <img src="img/eg12.jpg" class="img-fluid">
+             </div>
+          </div>
+       </div>
+      </div>
+
+      <div id="thailand" class="container tab-pane fade"><br>
+        <h3>RESPONSIBLE TOURISM IN THAILAND</h3>
+        <p>Thailand is one of the world’s most renowned holiday destinations, with a wide variety of things to see and do, from culture, religion, food, nature, water, adventure, sports and also relaxing activities. Thailand also growing as a health and wellness destination, with a huge number of healing and detox centres. Muay Thai is rapidly expanding world-wide, now with many Muay Thai camps and competitions held across Thailand. There are thousands of temples and cultural centres promoting the unique Thai culture, as well as Royal Thai palaces to witness. Thai food plays an integral role in the Thai way of life, and with Thai food growing in popularity worldwide, authentic Thai food from the streets or in fine dining restaurants will certainly not disappoint anyone.<br>
+        Of course, Thailand’s beaches and islands are unmissable as their beauty and uniqueness are breathtaking. With a huge range of water activities including snorkelling, scuba diving, parasailing and jet skiing… there is something for everyone to do in Thailand!</p>
+
+        <div class="container">
+          <div class="d-flex flex-row">
+             <div class="d-flex flex-column">
+                <img src="img/th1.jpg" class="img-fluid">
+                <img src="img/th2.jpg" class="img-fluid">
+                <img src="img/th3.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/th4.jpg" class="img-fluid">
+                <img src="img/th5.jpg" class="img-fluid">
+                <img src="img/th6.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/th7.jpg" class="img-fluid">
+                <img src="img/th8.jpg" class="img-fluid">
+                <img src="img/th9.jpg" class="img-fluid">
+             </div>
+             <div class="d-flex flex-column">
+                <img src="img/th10.jpg" class="img-fluid">
+                <img src="img/th11.jpg" class="img-fluid">
+                <img src="img/th12.jpg" class="img-fluid">
+             </div>
+          </div>
+       </div>
+      </div>
+    </div>
+  </div>     
+</div>
+</div>
+
+<div id="testimonials">
+<div class="container">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h5 class="text-center">Just Imagine, This Could Be You...</h5>
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <p>"It was an outstanding trip, your services all worked perfectly, wonderful hotel. Special mention for the excellent guides everywhere, but please tell your transfer service that our driver was absolutely amazing, he was the highlight of our travels and matched the professionalism and excitement of our holiday."</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            <cite title="Source Title">Monica</cite>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="carousel-item">
+        <h5 class="text-center">Just Imagine, This Could Be You...</h5>
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <p>"I just talked to the group and they are VERY SATISFIED with their visit to Hawaii. Everything was great. They liked the hotel and both restaurants. The guide was very nice and skilled. Thank you very much for all your good help with this group."</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            <cite title="Source Title">Anne</cite>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="carousel-item">
+        <h5 class="text-center">Just Imagine, This Could Be You...</h5>
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <p>"Just a few lines to tell you that your two guides have been wonderful and my club asked me to thank both of them for such a pleasant experience. You are one of the most experienced."</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            <cite title="Source Title">Peter</cite>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>  
+
+
+  </div>
+</div>  
+</div>
+</div>    
+</section>
+<!-------------------------Booking---------------------------> 
+<section id="booking">
+  <h1 class="text-center">BOOKING ENQUIRY</h1>
+<div class="container">
+
+  <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3">
+    <h4 class="mb-3">CONTACT INFORMATION</h4>
+    <form class="needs-validation" novalidate>
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <label for="firstName" class="form-label">First name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="First Name" value="" required>
+          <div class="invalid-feedback">
+            Valid first name is required.
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <label for="lastName" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="" required>
+          <div class="invalid-feedback">
+            Valid last name is required.
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address.
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="address" class="form-label">Address</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+          <div class="invalid-feedback">
+            Please enter your address.
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+        </div>
+
+        <div class="col-md-12">
+          <label for="cc-number" class="form-label">Contact Number</label>
+          <input type="text" class="form-control" id="cc-number" placeholder="Phone Number" required>
+          <div class="invalid-feedback">
+            Contact number is required
+          </div>
+        </div>
+
+      <hr class="my-4">
+
+      <h4 class="mb-3">JOURNEY INFORMATION</h4>
+      <h6 class="mb-3">Please select on of the following fields*</h6>
+
+      <div class="my-3">
+        <div class="form-check">
+          <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+          <label class="form-check-label" for="credit">One Way</label>
+        </div>
+        <div class="form-check">
+          <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+          <label class="form-check-label" for="debit">Return</label>
+        </div>
+        <div class="form-check">
+          <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+          <label class="form-check-label" for="paypal">Multi City/Stop Over</label>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <label for="country" class="form-label">From Country</label>
+        <select class="form-select" id="country" required>
+          <option value="">Choose...</option>
+          <option>United States</option>
+          <option>Austria</option>
+          <option>Brazil</option>
+          <option>Canada</option>
+          <option>Macedonia</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid country.
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <label for="state" class="form-label">To Country</label>
+        <select class="form-select" id="state" required>
+          <option value="">Choose...</option>
+          <option>United States</option>
+          <option>Austria</option>
+          <option>Brazil</option>
+          <option>Canada</option>
+          <option>Macedonia</option>
+        </select>
+        <div class="invalid-feedback">
+          Please provide a valid state.
+        </div>
+      </div>
+    
+      <div class="col-sm-6">
+        <label for="username" class="form-label">Departure Date</label>
+        <div class="input-group has-validation">
+          <input type="text" class="form-control" id="username" placeholder="mm/dd/yy" required>
+          <span class="input-group-text"><i class="bi bi-calendar2-week"></i></span>
+        <div class="invalid-feedback">
+            Date is required.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <label for="username" class="form-label">Return Date</label>
+        <div class="input-group has-validation">
+          <input type="text" class="form-control" id="username" placeholder="mm/dd/yy" required>
+          <span class="input-group-text"><i class="bi bi-calendar2-week"></i></span>
+        <div class="invalid-feedback">
+            Date is required.
+          </div>
+        </div>
+      </div>
+
+      <h4 class="mb-3">Additional Services Required</h4>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="same-address">
+        <label class="form-check-label" for="same-address">Transportation arrangement</label>
+      </div>
+
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="save-info">
+        <label class="form-check-label" for="save-info">Accommodation arrangement</label>
+      </div>
+
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="save-info">
+        <label class="form-check-label" for="save-info">Holiday and honeymoon packages information</label>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Other Information you would like to share</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      
+      <hr class="my-4">
+
+      <button class="w-100 btn btn-primary btn-lg" type="submit">Submit</button>
+    </form>
+  </div>
+  </div>
+</section>
+<!-------------------------Footer---------------------------> 
+<footer>
+  <img src="img/wave.svg" class="footer-img">
+<div class="container">
+  <div class="row d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+    <div class="col-lg-12 col-md-12 col-sm-12 text-center" data-aos="fade-down">
+      <h5 class="main-title">Our Location</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><i class="bi bi-geo"></i> Spitalgasse 27, 3011 Bern</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><i class="bi bi-telephone"></i> 031 313 20 20</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><i class="bi bi-envelope-heart"></i> info@worldtravel.com</a></li>
+      </ul>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#maps" data-bs-toggle="tooltip" data-bs-placement="right" title="Click here to see the map" class="btn btn-primary m-lg-1 text-center"><i class="bi bi-geo-alt"></i></a>
+      <!------Modal Maps------->
+      <div class="modal" id="maps" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87147.27676987703!2d7.324829725341534!3d46.954765770904835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39c0d43a1b77%3A0xcb555ffe0457659a!2sBern!5e0!3m2!1sen!2sch!4v1648997854046!5m2!1sen!2sch" title="Google Maps" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+    <div class="text-center follow-icons">
+      <h5>Follow Us</h5>
+      <ul class="nav justify-content-center pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2"><i class="bi bi-facebook"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2"><i class="bi bi-instagram"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2"><i class="bi bi-twitter"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="d-flex justify-content-between py-4 my-4 border-top">
+      <p>Created by Jovanka Karoloska</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a href="https://github.com/Jovanka13"><i class="bi bi-github"></i></a></li>
+        <li class="ms-3"><a href="linkedin.com/in/jovanka-karoloska-9413841a3"><i class="bi bi-linkedin"></i></a></li>
+        <li class="ms-3"><a href="https://www.instagram.com/karoloska_/"><i class="bi bi-instagram"></i></a></li>
+        <li class="ms-3"><a href="https://m.facebook.com/jovanka.karoloska"><i class="bi bi-facebook"></i></a></li>
+      </ul>
+    </div>
+    <button type="button" class="btn btn-info btn-floating btn-lg" id="btn-back-to-top">
+      <i class="bi bi-arrow-up-circle"></i>
+    </button>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:1,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+    })
+    </script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 500,
+      });
+    </script>
+</body>
+</html>
